@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulário</title>
+</head>
+
+<body>
+    <header>
+        <center>
+            <img class="logo" src="assinatura.png" alt="Seraphine" width="250">
+        </center>
+        <br>
+        <center>
+            <nav class="nav">
+                <button>
+                    <a href="seraphine.html">Home</a>
+                </button>
+                <button>
+                    <a href="curiosidades.html">Curiosidades</a>
+                </button>
+                <button>
+                    <a href="formulario.html">Formulário</a>
+                </button>
+            </nav>
+        </center>
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+    </header>
+
+    <h2>Queremos te conhecer!</h2>
+
+    <div class="form">
+        <fieldset>
+            <legend>Identificação:</legend>
+            <label for="cNome"> Nome: </label><br />
+            <input type="text" size="50" name="tNome" id="cNome" required="required" />
+
+            <br /><br />
+            <p>Você mora:</p>
+            <input type="radio" name="tipo" id="cid" value="C" />
+            <label for="cid">Cidade</label><br />
+            <input type="radio" name="tipo" id="inter" value="I" />
+            <label for="inter">Interior</label><br />
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <label for="cCid">Escolha a sua cidade na lista</label>
+            <input list="cidade" name="tCid" id="cCid" placeholder="Sua Cidade" />
+            <datalist id="cidade">
+                <option value="São Paulo">São Paulo</option>
+                <option value="Campinas">Campinas</option>
+                <option value="Santos">Santos</option>
+                <option value="Santo André">Santo André</option>
+                <option value="joinville">Joinville</option>
+            </datalist>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <label for="cCid">Qual é a sua idade?</label>
+            <input list="idade" name="tCid" id="cCid" placeholder="Sua idade" />
+            <datalist id="idade">
+                <option value="13-18">13-18</option>
+                <option value="18-20">18-20</option>
+                <option value="20-25">20-25</option>
+                <option value="25-30">25-30</option>
+            </datalist>
+        </fieldset>
+    </div>
+
+    <h2>Nos Apoie</h2>
+    <div class="col">
+        <ul class="price-box">
+            <li class="header">Plano indie</li>
+            <li class="emph"><strong>R$ 5.99</strong>/ ao Mês</li>
+            <li>1 cristal Hextec</li>
+            <li>Uma musica da Seraphine</li>
+            <li><a href="#" class="btn">Cadastre-se</a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <ul class="price-box best">
+            <li class="header header-green">Plano RisingStar</li>
+            <li class="emph"><strong>R$ 15.99</strong> / ao Mês</li>
+            <li>3 Cristais Hextec</li>
+            <li>4 musicas da seraphine</li>
+            <li>Poster autografado</li>
+            <li><a href="#" class="btn">Cadastre-se</a></li>
+        </ul>
+    </div>
+    <div class="col">
+        <ul class="price-box">
+            <li class="header">Plano Superstar</li>
+            <li class="emph"><strong>R$ 25.99</strong> / ao Mês</li>
+            <li>5 Cristais Hextec</li>
+            <li>2 ingreços pra cada show da Seraphine</li>
+            <li>2 Posters autografados </li>
+            <li>1 foto autografada</li>
+            <li>acesso a conteudo privado</li>
+            <li><a href="#" class="btn">Cadastre-se</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <center>
+        <button>
+            Enviar
+        </button>
+    </center>
+
+    <footer>
+        <center>
+            IOS Programação web&copy; José Ricardo Mafra
+        </center>
+    </footer>
+
+</body>

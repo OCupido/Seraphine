@@ -1,0 +1,6 @@
+home:tema livre, cabeçalho, barra de navegação com hover, primera seção com borda, 3 imagens com flex blox e grid
+rodapé nome da instituição o curso e simbolo de copyright  
+
+curiosidades: cabeçalho, barra de navegação com hover, curiosidades do tema, 3 imagens separadas.
+
+Formulário:  cabeçalho, barra de navegação com hover,nome, idade, cidade, planos para assinatura e botõa de enviar.

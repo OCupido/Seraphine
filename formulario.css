@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+body {
+    background-image: url(cb2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    align-items: center;
+    border-style: none;
+    width: 250;
+}
+
+.nav {
+    align-items: center;
+}
+
+button {
+    --glow-color: rgb(118, 234, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(0, 26, 255);
+    --btn-color: rgba(132, 0, 255, 0);
+    border: .25em solid var(--glow-color);
+    padding: 1em 3em;
+    color: var(--glow-color);
+    font-size: 15px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+    margin: 20px;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(185, 80, 255);
+    text-shadow: 0px 0px 10px #FF1493;
+}
+   
+   
+   button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   
+   button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   
+   button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+
+   h2 {
+    text-align: center;
+}
+
+.col {
+    float: left;
+    width: 30%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+.price-box {
+    background: #fff;
+    color: #555;
+    list-style-type: none;
+    border: 1px solid #555;
+    margin: 0;
+    padding: 0;
+    margin-left: 100px;
+}
+
+.price-box .header {
+    background-color: rgb(255, 167, 236);
+    color: #fff;
+    font-size: 25px;
+}
+
+.price-box .header.header-green {
+    background: #81f7ff;
+}
+
+.price-box li {
+    padding: 20px;
+    border-bottom: 20px solid #eee;
+    text-align: center;
+}
+
+.btn {
+    background-color: #ff00b3;
+    border: none;
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: #FFD700;
+    text-shadow: white 0px 0px 10px;
+    background-color: rgba(0, 0, 0, 0.281);
+}
+
+.form {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #FFD700;
+    text-shadow: white 0px 0px 10px;
+    background-color: rgba(0, 0, 0, 0.281);
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    color: #FFD700;
+    text-shadow: white 0px 0px 10px;
+    background-color: rgba(0, 0, 0, 0.363);
+
+}
